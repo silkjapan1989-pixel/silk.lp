@@ -485,7 +485,8 @@
         @media (max-width: 768px) {
             :root { --sp-desktop: var(--sp-mobile); }
             section { padding: var(--sp-mobile) 20px; }
-            .sec-title { font-size: 1.8rem; margin-bottom: 2.5rem; }
+            .sec-title { font-size: clamp(1.2rem, 4.2vw, 1.4rem); margin-bottom: 2rem; letter-spacing: 0.05em; word-break: keep-all; overflow-wrap: break-word; }
+            .rec-end { font-size: 1.15rem; word-break: keep-all; overflow-wrap: break-word; }
             .hero-cnt { margin-left: 0; }
             .hero-ttl { font-size: 2.2rem; }
             .about-wrap { flex-direction: column; gap: 3rem; }
